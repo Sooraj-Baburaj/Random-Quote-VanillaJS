@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: orange;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: 0.8s;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.quotes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote {
+  color: orange;
+  transition: 0.8s;
+  text-align: center;
+  padding: 5% 5% 0 5%;
+  margin-bottom: 1%;
+}
+.quote::before {
+  content: open-quote;
+}
+.quote::after {
+  content: close-quote;
+}
+.authors {
+  width: 95%;
+}
+.author {
+  margin-top: 15px;
+  padding-top: 0px;
+  color: orange;
+  float: right;
+  transition: 0.8s;
+}
+.author::before {
+  content: "-";
+  font-weight: 900;
+}
+.btns {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn {
+  margin-right: 5%;
+  width: 150px;
+  height: 35px;
+  transition: 1s;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: medium;
+}
+@media screen and (max-width: 500px) {
+  .quote {
+    font-size: x-large;
+  }
+  body {
+    height: 70vh;
+  }
+  .author {
+    font-size: large;
+  }
+}
