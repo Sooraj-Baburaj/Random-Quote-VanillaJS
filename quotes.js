@@ -25,18 +25,12 @@ let colors = [
 let counter = 0 ;
 
 ChangeQuote = () => {
-    quote.style.opacity = '0';
-    author.style.opacity = '0';
-
-    setTimeout(() => {
      quote.innerHTML = quotes[counter].quote;
     author.innerHTML = quotes[counter].author;
 
     let currColor = colors[counter];
 
     quote.style.color = currColor;
-    quote.style.opacity = '1';
-    author.style.opacity = '1';
     author.style.color = currColor;
     btn.style.background = currColor;
     body.style.background = currColor;
@@ -46,4 +40,4 @@ ChangeQuote = () => {
     }else{
         counter = 0
     }
-},500)}
+}

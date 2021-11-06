@@ -20,7 +20,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  z-index: 2;
 }
 .quotes {
   width: 100%;
@@ -30,7 +29,7 @@ body {
 }
 .quote {
   color: orange;
-  transition: 0.8s;
+  transition: 1s;
   text-align: center;
   padding: 5% 5% 0 5%;
   margin-bottom: 1%;
@@ -49,7 +48,7 @@ body {
   padding-top: 0px;
   color: orange;
   float: right;
-  transition: 0.8s;
+  transition: 1s;
 }
 .author::before {
   content: "-";
